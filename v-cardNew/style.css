@@ -1,0 +1,133 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+@media screen and (min-width: 600px){
+    img#midim{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    div.left{
+        display: none;
+    }
+    div.container{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+    }
+    div.middle{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+    div.right{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+    }
+}
+.left{
+    height: 100%;
+	width: 20%;
+	background-color: #4f1ff7;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px;
+	color: white;
+}
+.middle{
+    height: 100%;
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+}
+.right{
+	height: 100%;
+	width: 45%;
+	/*background-color: yellow;*/
+	padding: 30px;
+	padding-left: 0;
+}
+.rightcontent{
+    display: flex;
+    height: 100%;
+}
+.blueWhite{
+    height: 100%;
+    width: 200px;
+    background-color: #4f1ff7;
+}
+.logo{
+    width: 140px;
+    height: 1ç0px;
+}
+.me{
+    width:400px;
+    height: 400px;
+}
+.rightleft{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+}
+   /* justify-content: space-around;*/
+
+.rightRight{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.btn-pf{
+	color: white;
+	background-color: #4f1ff7;
+	border-radius: 30px;
+	padding: 10px 50px;
+    border: none;
+
+}
+#midim{
+    width: 150px;
+    height: 1ç0px;
+}
+span{color: #4f1ff7;}
+.btn-res{
+	border-radius: 30px;
+	border: solid black 1px;
+	padding: 10px 50px;
+}
+.menu-container i{
+    display: flex;
+    justify-content: right;
+    font-size: 50px;
+	cursor: pointer;
+	transition: opacity ease 1s
+}
+.menu-container i:hover{
+	opacity: 0.4;
+}
